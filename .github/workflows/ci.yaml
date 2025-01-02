@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: ['3.5', '3.6', '3.7', '3.8', '3.9', '3.10', '3.11', 'pypy-2.7', 'pypy-3.7', 'pyston']
+        python-version: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11', 'pypy-2.7', 'pypy-3.7', 'pyston']
         os: [ubuntu-20.04]
         architecture: ["x64"]
 
@@ -47,6 +47,8 @@ jobs:
         python -m pip install --upgrade setuptools~=43.0
     - name: Setup RtIPC
       run: |
+        sudo apt update
+        sudo apt install libyaml-dev libmhash-dev
         git clone https://gitlab.com/etherlab.org/rtipc.git librtipc
         mkdir librtipc/build
         cd librtipc/build

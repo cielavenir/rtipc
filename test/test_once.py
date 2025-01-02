@@ -1,9 +1,6 @@
 import numpy
 import ctypes
-try:
-    import rtipc
-except ImportError:
-    rtipc = None
+import rtipc
 
 def test_once():
     rtipcObj = rtipc.RtIPC('simulator')

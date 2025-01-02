@@ -19,6 +19,10 @@ setup(
     zip_safe=False,
     # include_package_data=True,
     platforms='any',
+    install_requires=[
+        'six',
+        'aenum; python_version < "3"',
+    ],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
