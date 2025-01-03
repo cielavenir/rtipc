@@ -9,8 +9,8 @@ jobs:
     strategy:
       matrix:
         # python-version: ['3.8', '3.9', '3.10', '3.11', 'pypy-2.7', 'pypy-3.7']
-        python-version: ['3.12']
-        os: [ubuntu-24.04]
+        python-version: [system]
+        os: [ubuntu-22.04, ubuntu-24.04]
         architecture: ["x64"]
 
     steps:
