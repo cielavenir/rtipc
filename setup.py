@@ -26,7 +26,7 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
-        'License :: LGPL',
+        'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
         'Operating System :: POSIX',
         'Topic :: Software Development :: Libraries',
         'Topic :: Utilities',
