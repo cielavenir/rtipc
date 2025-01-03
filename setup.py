@@ -21,7 +21,7 @@ setup(
     platforms='any',
     install_requires=[
         'six',
-        'aenum; python_version < "3"',
+        'aenum~=2.2; python_version < "3"',
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
