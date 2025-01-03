@@ -68,10 +68,10 @@ except OSError:
     raise ImportError('librtipc.so cannot be loaded, cannot import rtipc binding')
 
 librtipc.rtipc_create.argtypes = [ctypes.c_char_p, ctypes.c_char_p]
-librtipc.rtipc_create.restype = ctypes.c_longlong  # rtipc*
+librtipc.rtipc_create.restype = ctypes.c_void_p  # rtipc*
 
 librtipc.rtipc_create_group.argtypes = [ctypes.c_void_p, ctypes.c_double]  # rtipc*
-librtipc.rtipc_create.restype = ctypes.c_void_p  # rtipc_group*
+librtipc.rtipc_create_group.restype = ctypes.c_void_p  # rtipc_group*
 
 librtipc.rtipc_txpdo.argtypes = [ctypes.c_void_p, ctypes.c_char_p, ctypes.c_int, ctypes.c_void_p, ctypes.c_int]  # rtipc_group*
 librtipc.rtipc_txpdo.restype = ctypes.c_void_p  # txpdo*
