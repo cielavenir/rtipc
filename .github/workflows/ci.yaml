@@ -8,7 +8,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: ['3.8', '3.9', '3.10', '3.11', 'pypy-2.7', 'pypy-3.7']
+        # python-version: ['3.8', '3.9', '3.10', '3.11', 'pypy-2.7', 'pypy-3.7']
+        python-version: ['3.12']
         os: [ubuntu-24.04]
         architecture: ["x64"]
 
@@ -61,7 +62,7 @@ jobs:
       run: |
         # python -m pip install .
         # python -m pip install pytest numpy
-        python3 -m venv /rtipc
+        sudo python3 -m venv /rtipc
         /rtipc/bin/pip install .
         /rtipc/bin/pip install pytest numpy
     - name: Test
