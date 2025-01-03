@@ -63,7 +63,7 @@ jobs:
         # python -m pip install .
         # python -m pip install pytest numpy
         sudo python3 -m venv /rtipc
-        sudo chown -RH ubuntu /rtipc
+        sudo chown -RH `whoami` /rtipc
         /rtipc/bin/pip install .
         /rtipc/bin/pip install pytest numpy
     - name: Test
