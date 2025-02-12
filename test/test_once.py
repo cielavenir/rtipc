@@ -2,7 +2,7 @@ import numpy
 import ctypes
 import rtipc
 
-def test_once():
+def test_once_1():
     rtipcObj = rtipc.RtIPC('simulator')
     rtipcGroup = rtipcObj.CreateGroup(1.0)
     receiveMemory = numpy.zeros(16, numpy.uint8)
