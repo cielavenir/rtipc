@@ -49,7 +49,9 @@ jobs:
       run: |
         sudo apt update
         sudo apt install libyaml-dev libmhash-dev
-        git clone https://gitlab.com/etherlab.org/rtipc.git librtipc
+        # git clone https://gitlab.com/etherlab.org/rtipc.git librtipc
+        git clone https://gitlab.com/cielavenir/rtipc.git librtipc
+        git -C librtipc checkout unlockseminexit
         mkdir librtipc/build
         cd librtipc/build
         cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDEBUG=ON
