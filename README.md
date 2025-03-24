@@ -34,3 +34,5 @@ The license is the same as etherlab rtipc.
 That means, if they (somehow) move to more permissive license, this binding license will be changed accordingly.
 
 On the otherhand, if they unfortunately move to GPL, I will stop supporting this binding.
+
+(Note sure if licensing in LGPL/MIT dual is safer though...)
