@@ -27,6 +27,12 @@ with rtipcObj:
     rtipcGroup.Send()
 ```
 
+## Retaining Memory
+
+While rtipc.RtIPC is running, please retain `receiveMemory`, `sendMemory` and `connected`; otherwise rtipcGroup.Receive/Send will cause SEGV. Especially be careful about `connected`.
+
+If you are an experimented C++ programmer, you can imagine like AddReceivePdo/AddSendPdo is passing `shared_ptr<char[]>::get()` (and without retaining variables the shared_ptr is gone).
+
 ## License Note (also for contributors)
 
 The license is the same as etherlab rtipc.
