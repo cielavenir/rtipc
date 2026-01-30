@@ -35,10 +35,8 @@ If you are an experienced C++ programmer, you can imagine like AddReceivePdo/Add
 
 ## License Note (also for contributors)
 
-The license is the same as etherlab rtipc.
+Licensed under LGPL/MIT so that if etherlab rtipc license is changed to more permissive one this binding can follow the change.
 
-That means, if they (somehow) move to more permissive license, this binding license will be changed accordingly.
+As long as etherlab rtipc is licensed under LGPL, **the USER of this binding should consider it as LGPL-only.**
 
-On the otherhand, if they unfortunately move to GPL, I will stop supporting this binding.
-
-(Note sure if licensing in LGPL/MIT dual is safer though...)
+(On the otherhand, if they unfortunately move to GPL, I will stop supporting this binding.)
